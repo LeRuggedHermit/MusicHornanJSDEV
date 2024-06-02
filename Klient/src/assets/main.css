@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  background-color: antiquewhite;
+  font-family: "Oswald", sans-serif;
+}
+
+main {
+  margin-top: 500px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+
+}
+
+section {
+  width: 70%;
+
+}
+
+.content_container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recomendations {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recomendations > * {
+  flex: 1 1 25%; 
+  box-sizing: border-box; 
+  max-width: 25%; 
+  padding: 10px; 
+}
+
+.rec {
+  background-color: rgb(206, 164, 246);
+  border: solid black 1px;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 968px) {
+
+  .recomendations > * {
+    flex: 1 1 50%; 
+    box-sizing: border-box; 
+    max-width: 50%; 
+    padding: 10px; 
+  }
+
+}
